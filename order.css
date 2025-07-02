@@ -39,7 +39,14 @@ header {
 
 .logo h1 {
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    height: 48px;
+    width: 48px;
+    margin-right: 10px;
 }
 
 .back-btn {

@@ -100,7 +100,7 @@ header {
 }
 
 .nav a:hover {
-    color: rgb(188, 187, 187);
+    color: black;
 }
 
 .header-buttons {
@@ -153,7 +153,7 @@ header {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 900px;
     color: white;
 }
 
@@ -183,7 +183,8 @@ header {
 }
 
 .hero-btn:hover {
-    background: #572703;
+    background: wheat;
+    color: #000;
 }
 
 /* Section Styles */
