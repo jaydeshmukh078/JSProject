@@ -1,11 +1,11 @@
 let signup = () => {
-    let name = document.querySelector("#fullname").value.trim();
+    let fullname = document.querySelector("#fullname").value.trim();
     let email = document.querySelector("#email").value.trim();
     let number = document.querySelector("#phone").value.trim();
     let pass = document.querySelector("#password").value;
     let cpass = document.querySelector("#confirmPassword").value;
 
-    if (name === "") {
+    if (fullname === "") {
         document.querySelector("#fullname").placeholder = "Please enter your name";
         return false;
     }
@@ -59,12 +59,28 @@ let signup = () => {
         return false;
     }
 
+
+    //local storage
+
+    localStorage.setItem("Name", fullname)
+    localStorage.setItem("Email", email)
+    localStorage.setItem("Number", number)
+    localStorage.setItem("Password", pass)
+    window.location.reload()        //isse page bar bar refresh nhi krne pdta
+    window.location.href = ""          //page jump and add
+
     // All validations passed
     alert("Sign up successful!");
    
     window.location.href="login.html";
      return false;
 }
+
+// let rdata = () => {
+//     localStorage.removeItem("Name")
+//     window.location.reload()
+//      window.localStorage.clear()  /////////for alll clear
+// }
 
 let login=()=>{
     window.location.href="index.html";
