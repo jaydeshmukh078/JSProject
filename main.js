@@ -79,7 +79,7 @@ let signup = () => {
 // let rdata = () => {
 //     localStorage.removeItem("Name")
 //     window.location.reload()
-//      window.localStorage.clear()  /////////for alll clear
+//      window.localStorage.clear()  //for alll clear
 // }
 
 let login=()=>{
