@@ -295,6 +295,21 @@ header {
 .menuorder{
     display: flex;
     justify-content: center;
+    padding-top: 20px;
+}
+
+.menuorder .order-btn{
+    background-color: #A0522D;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.menuorder .order-btn a{
+    text-decoration: none;
+    color: white;
 }
 
 /* About Section */
