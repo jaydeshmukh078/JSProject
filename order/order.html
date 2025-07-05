@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal Café - Order Food Online</title>
-   <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="/order/order.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/img/hero-img.png" alt="">
+                    <img src="/img/hero-img.png" alt="logo img">
                     <h1>Royal Café</h1>
                 </div>
                 <a href="/index.html" class="back-btn">← Back to Home</a>
@@ -47,8 +49,8 @@
                             <p>Rich espresso with steamed milk foam and a touch of cinnamon</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹120</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
 
@@ -59,8 +61,8 @@
                             <p>Espresso with steamed milk and beautiful latte art</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹140</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
 
@@ -71,8 +73,8 @@
                             <p>Bold espresso shots with hot water for a classic coffee experience</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹100</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
 
@@ -84,8 +86,8 @@
                             <p>Sourdough bread with smashed avocado, cherry tomatoes, and herbs</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹220</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
 
@@ -96,8 +98,8 @@
                             <p>Fluffy pancakes with fresh blueberries and maple syrup</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹180</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
 
@@ -108,8 +110,8 @@
                             <p>Buttery, flaky croissant with rich chocolate filling</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹110</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
 
@@ -121,8 +123,8 @@
                             <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹150</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
 
@@ -133,14 +135,14 @@
                             <p>Creamy cheesecake with graham cracker crust and berry compote</p>
                             <div class="menu-item-footer">
                                 <span class="price">₹170</span>
+                                <button class="add-btn">Add to Cart</button>
                             </div>
-                            <button class="add-btn">Add to Cart</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-         <!-- Order Summary -->
+            <!-- Order Summary -->
             <div class="order-summary">
                 <div class="special-offers">
                     <h3>🎉 Special Offer!</h3>
@@ -149,11 +151,12 @@
                 </div>
 
                 <h3 class="summary-title">Your Order</h3>
-                
+
                 <!-- Empty Cart State -->
                 <div class="empty-cart">
                     <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                        <path
+                            d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" />
                     </svg>
                     <p>Your cart is empty</p>
                     <p>Add items from menu to get started</p>
@@ -168,7 +171,7 @@
                         </div>
                         <div class="item-price">₹240</div>
                     </div>
-                    
+
                     <div class="cart-item">
                         <div class="item-details">
                             <h4>Avocado Toast</h4>
@@ -201,5 +204,25 @@
             </div>
         </div>
     </div>
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="usedata"></tbody>
+    </table>
+
+
+
+    <script src="order.js"></script>
 </body>
+
 </html>
