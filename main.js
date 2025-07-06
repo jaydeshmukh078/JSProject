@@ -71,9 +71,9 @@ let signup = () => {
 
     // All validations passed
     alert("Sign up successful!");
-   
-    window.location.href="login.html";
-     return false;
+
+    window.location.href = "login.html";
+    return false;
 }
 
 // let rdata = () => {
@@ -82,7 +82,35 @@ let signup = () => {
 //      window.localStorage.clear()  //for alll clear
 // }
 
-let login=()=>{
-    window.location.href="index.html";
+let login = () => {
+    let email = document.querySelector("#email").value;
+    let pass = document.querySelector("#password").value;
+
+    // check email and password are same our not
+    if (email != localStorage.getItem("Email")) {
+        document.querySelector("#email").value = ""
+        document.querySelector("#email").placeholder = "Invalid Email"
+        return false;
+    }
+
+    // check local storage password same or not
+    if (pass != localStorage.getItem("Password")) {
+        document.querySelector("#password").value = ""
+        document.querySelector("#password").placeholder = "Invalid Password"
+        return false
+    }
+
+
+    window.location.href = "index.html";
     return false;
+}
+
+// Check user login our not
+let checkk = () => {
+    if (localStorage.getItem("name") == "") {
+        window.location.href = "order.html";
+    }
+    else {
+        window.location.href = "signup.html";
+    }
 }
