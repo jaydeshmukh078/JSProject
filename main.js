@@ -107,10 +107,10 @@ let login = () => {
 
 // Check user login our not
 let checkk = () => {
-    if (localStorage.getItem("name") == "") {
-        window.location.href = "order.html";
+    if (localStorage.getItem("Name")=="") {
+        window.location.href = "signup.html";
     }
     else {
-        window.location.href = "signup.html";
+        window.location.href = "./order/order.html";
     }
 }

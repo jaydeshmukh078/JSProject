@@ -4,7 +4,24 @@ let fetchdata = async () => {
   let res = await fetch(url, { method: "GET" });
   let data = await res.json();
 
-  console.log(data);
+  // console.log(data);
+  datashow(data)
+}
+
+let searchhh=async()=>{
+  let searchinp = document.querySelector("#searchh").value.toLowerCase()
+  let url = 'http://localhost:3000/RoyalCafe'
+   let res = await fetch(url, { method: "GET" });
+   let data = await res.json();
+   data.filter((e)=>{
+
+    return e.name.toLowerCase().includes(searchinp)
+
+   })
+
+}
+
+let datashow=(data)=>{
 
   let datashow = document.querySelector("#usedata");
   datashow.innerHTML = "";
@@ -117,3 +134,8 @@ checkoutButton.addEventListener("click", () => {
   cart = [];
   updateCartUI();
 });
+
+
+let checkk=()=>{
+
+}
